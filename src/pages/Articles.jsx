@@ -15,7 +15,7 @@ const projects = [
     title: "ERC4626 TOKENIZED VAULT SMART CONTRACT SIMPLIFIED.",
     Link: "https://medium.com/@PaulElisha1/building-an-erc4626-smart-contract-on-klaytn-7bbeb4cbb078",
     description:
-      "One of the common problems in DeFi is the difference in the smart contract implementation of yield-bearing protocols. For instance, Yearn allows you to deposit tokens into a vault and earn a yield on the tokens while they are deposited. Aave and Compound do similar things with their lending and borrowing contracts.",
+      "One of the common problems in DeFi is the difference in the smart contract implementation of yield-bearing protocols. For instance, Yearn allows you to deposit tokens into a vault and earn a yield on the tokens while they are deposited, Aave and Compound do similar things with their lending and borrowing contracts.",
     image: "/src/assets/Article 2.png",
   },
   {
