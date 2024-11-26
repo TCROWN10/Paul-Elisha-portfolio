@@ -14,13 +14,13 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-black font-sans p-8">
-      <motion.nav
+    <div className="min-h-screen bg-white text-black font-sans p-8 text-center">
+      {/* <motion.nav
         variants={fadeIn}
         initial="hidden"
         animate="visible"
         className="flex justify-between items-center mb-8"
-      ></motion.nav>
+      ></motion.nav> */}
 
       {/* Main Content */}
       <motion.main
@@ -37,7 +37,7 @@ function Home() {
         >
           Engineering Trust through Automation
         </motion.h2>
-        <p className="text-lg leading-relaxed max-w-3xl  mb-8">
+        <p className="text-lg mb-8 text-center md:mx-48">
           As a smart contract engineer, my primary focus is on building trust,
           integrating protocols and automating processes in code leveraging
           distributed platforms. I have a foundation in software engineering
@@ -60,19 +60,12 @@ function Home() {
         <h3 className="text-2xl font-semibold mb-4">Contact Me.</h3>
         <p className="text-lg mb-4">
           Reach out to me at{" "}
-          <a
-            href="https://x.com/paulelishaa"
-            className="text-blue-500 underline"
-          >
-            @paulelishaa
-          </a>
-          ,
           <a href="ajaoireoluwa1@gmail.com" className="text-blue-500 underline">
             {" "}
             ajaoireoluwa1@gmail.com
           </a>
         </p>
-        <div className="flex  space-x-4">
+        <div className="flex justify-center space-x-4">
           <a
             href="https://github.com/PaulElisha"
             className="text-blue-500 underline"

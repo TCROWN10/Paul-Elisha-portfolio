@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="flex justify-between items-center mb-8">
+      <nav className="flex justify-between items-center mb-8 font-roboto">
         <h1 className="text-xl md:text-2xl font-bold flex items-center">
           <img
             src="/paul.jpeg"
@@ -35,7 +35,7 @@ function Navbar() {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 text-gray-600">
+        <div className="hidden md:flex space-x-6 text-gray-600 font-roboto">
           <Link to="/" className="hover:text-black">
             Home
           </Link>
@@ -61,7 +61,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden space-y-4 text-gray-600 mb-4 h-screen">
+        <div className="md:hidden space-y-4 text-gray-600 mb-4 h-screen font-roboto">
           <Link
             to="/"
             className="block hover:text-black"

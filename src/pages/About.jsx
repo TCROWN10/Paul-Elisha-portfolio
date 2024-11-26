@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="flex flex-col p-4 md:p-8 bg-white text-black min-h-screen">
-      <h1 className="text-3xl md:text-6xl font-bold mb-4 md:ml-40">
+    <div className="flex flex-col p-4 md:p-8 bg-white text-black min-h-screen justify-center text-center font-roboto">
+      <h1 className="text-3xl md:text-6xl font-bold mb-4 md:ml-40 text-center font-roboto">
         Paul Elisha
       </h1>
 
@@ -13,9 +13,10 @@ const About = () => {
         {/* Profile Image */}
         <div className="  md:w-64 md:h-auto mb-6 md:mb-0 md:mr-8">
           <img
-            src="/LLW_3833.jpg" // replace with the actual path to your image
+            src="/paul.jpeg" // replace with the actual path to your image
             alt="Paul Elisha"
-            className="md:w-full rounded-lg md:h-[70vh] h-[30vh] w-88 md:object-cover object-contain"
+            className="md:w-full rounded-lg md:h-[70vh] h-[30vh] w-88 md:object-cover object-contain" 
+            
           />
         </div>
 
@@ -49,14 +50,13 @@ const About = () => {
             .
           </p>
           <p className="italic mb-4">Chess player and problem solver.</p>
-        </div>
-      </div>
-
-      <Link to="/Articles">
-        <button className="mt-8 px-6 py-2 bg-black text-white rounded-full text-lg hover:bg-gray-800 md:ml-40">
+          <Link to="/Articles">
+        <button className=" px-6 py-2 bg-black text-white rounded-full text-lg hover:bg-gray-800 text-center">
           Articles →
         </button>
       </Link>
+        </div>
+      </div>
     </div>
   );
 };

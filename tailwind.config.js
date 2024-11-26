@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'], // Add your font family here
+        sans: ['Inter', 'sans-serif'], // Tailwind's default sans-serif stack
+      },
+    },
   },
   plugins: [],
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -60,8 +61,8 @@ const Project = () => {
   });
 
   return (
-    <div className="p-4 md:p-6 max-w-4xl mx-auto">
-      <div className="text-2xl md:text-6xl text-center font-bold text-gray-800 mb-4">
+    <div className="p-4 md:p-6 max-w-4xl mx-auto font-roboto">
+      <div className="text-2xl md:text-6xl text-center font-bold text-gray-800 mb-4 font-Inter">
         Projects
       </div>
 
@@ -96,7 +97,7 @@ const Project = () => {
 
       {/* Project List */}
       {filteredProjects.length > 0 ? (
-        <div className="space-y-6">
+        <div className="space-y-12">
           {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
@@ -106,26 +107,20 @@ const Project = () => {
               transition={{ duration: 0.3 }}
               whileHover={{ scale: 1.05 }}
             >
-              <h3 className="text-lg font-semibold text-black">
+              <h3 className="text-lg font-semibold text-black mb-2">
                 {project.title}
               </h3>
               <p className="text-gray-600">{project.description}</p>
               <div className="flex flex-wrap gap-2 mt-2">
                 {project.stack.map((tech, index) => (
-                  <span
+                  <Link to={project.link}
                     key={tech}
-                    className={`px-3 py-1 rounded-lg text-sm ${colors[index % colors.length]}`}
+                    className={`px-3 py-1 rounded-lg text-sm mt-2 font-roboto ${colors[index % colors.length]}`}
                   >
                     {tech}
-                  </span>
+                  </Link>
                 ))}
               </div>
-              <a
-                href={project.link}
-                className="text-blue-600 hover:underline block mt-3"
-              >
-                Github Repo
-              </a>
             </motion.div>
           ))}
         </div>
