@@ -16,18 +16,20 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="flex justify-between items-center mb-8 font-roboto">
-        <h1 className="text-xl md:text-2xl font-bold flex items-center">
+      <nav className="flex justify-between items-center mb-8 md:mx-48 font-roboto">
+        <div className="text-xl md:text-2xl font-bold flex items-center gap-4">
           <img
             src="/paul.jpeg"
             alt="Profile"
-            className="w-8 h-8 md:w-10 md:h-10 rounded-full mr-3"
+            className="w-8 h-8 md:w-10 md:h-10 rounded-full"
           />
-          Paul Elisha
-          <span className="hidden sm:inline text-xs md:text-sm font-normal text-gray-500 ml-2">
+            <div className="">
+            <h1 className="-mb-4">Paul Elisha</h1>
+          <span className="hidden sm:inline text-xs md:text-sm font-normal text-gray-500 mt-0">
             (Software Engineer)
           </span>
-        </h1>
+            </div>
+        </div>
 
         {/* Hamburger Menu Icon for Mobile */}
         <div className="md:hidden cursor-pointer" onClick={toggleMobileMenu}>

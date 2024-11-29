@@ -1,11 +1,13 @@
 // src/pages/AboutPage.js
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { GoArrowUpRight } from "react-icons/go";
 
 const About = () => {
   return (
     <div className="flex flex-col p-4 md:p-8 bg-white text-black min-h-screen justify-center text-center font-roboto">
-      <h1 className="text-3xl md:text-6xl font-bold mb-4 md:ml-40 text-center font-roboto">
+      <h1 className="text-3xl md:text-6xl font-bold mb-4 text-center font-roboto">
         Paul Elisha
       </h1>
 
@@ -57,6 +59,51 @@ const About = () => {
       </Link>
         </div>
       </div>
+       {/* Contact Section */}
+       <motion.section
+        initial="hidden"
+        animate="visible"
+        // variants={fadeIn}
+        className="mt-16 text-start md:mx-36"
+      >
+        <h3 className="text-2xl font-semibold mb-4">Contact Me.</h3>
+        <p className="text-lg mb-4">
+          Reach out to me at{" "}
+          <a href="ajaoireoluwa1@gmail.com" className="text-black underline">
+            {" "}
+            ajaoireoluwa1@gmail.com
+          </a>
+        </p>
+        <div className="flex space-x-4 text-start">
+          <a
+            href="https://github.com/PaulElisha"
+            className="text-black underline flex"
+          >
+           <p>GitHub</p>
+            <GoArrowUpRight
+            className="-mb-6 text-xs"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/paul-elisha-659268198"
+            className="text-black underline flex"
+          >
+           <p>LinkedIn</p> 
+           <GoArrowUpRight
+            className="-mb-6 text-xs"
+            />
+          </a>
+          <a
+            href="https://x.com/paulelishaa"
+            className="text-black underline flex"
+          >
+          <p>Twitter</p>
+          <GoArrowUpRight
+            className="-mb-6 text-xs"
+            />
+          </a>
+        </div>
+      </motion.section>
     </div>
   );
 };

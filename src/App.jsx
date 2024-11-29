@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white text-black font-sans p-8">
+      <div className="min-h-screen bg-white text-black font-sans p-8 md:mx-48">
         <Navbar />
 
         <Routes>
