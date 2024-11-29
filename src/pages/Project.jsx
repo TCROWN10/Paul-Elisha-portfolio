@@ -165,7 +165,7 @@ const Project = () => {
                           className="flex gap-2 items-center "
                         >
                           <PiDotBold
-                            className={`rounded-full w-3 h-3  ${tech.color}`} />
+                            className={`rounded-full w-2 h-2  ${tech.color}`} />
                           <p> {tech.name} </p>
                         </Link>
                         : <div
@@ -173,7 +173,7 @@ const Project = () => {
                           className="flex gap-2 items-center "
                         >
                           <PiDotBold
-                            className={`rounded-full w-3 h-3 ${tech.color}`} />
+                            className={`rounded-full w-2 h-2 ${tech.color}`} />
                           <p> {tech.name} </p>
                         </div>
                     }

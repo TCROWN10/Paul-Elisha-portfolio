@@ -35,7 +35,7 @@ const projects = [
 
 const Articles = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-8 md:mx-48">
+    <div className="bg-gray-100 min-h-screen md:mx-48">
       {/* Research Introduction */}
       <section className="mb-12 text-center max-w-2xl mx-auto">
         <h2 className="text-6xl font-bold text-gray-800 mb-4">Articles</h2>
